@@ -66,7 +66,7 @@ e.rmempty = true
 e:value("adg.txt", translate("AdGuard规则"))
 e:value("steven.txt", translate("Steven规则"))
 e:value("yhosts.txt", translate("Yhosts规则"))
-e:value("antiad.txt", translate("Anti-AD规则"))
+e:value("antiad.txt", translate("AntiAD规则"))
 e:value("adgk.txt", translate("Banben规则"))
 
 e = t:option(ListValue, "koolproxy_port", translate("端口控制"))
