@@ -24,8 +24,8 @@ local f = luci.sys.exec("grep -v !x /usr/share/koolproxy/data/rules/anti-ad.txt 
 local i = luci.sys.exec("cat /usr/share/koolproxy/dnsmasq.adblock | wc -l")
 
 o = Map("koolproxy")
-o.title = translate("GodProxy 滤广告")
-o.description = translate("GodProxy是基于KoolProxyR Plus重新整理的能识别adblock规则的免费开源软件,追求体验更快、更清洁的网络，屏蔽烦人的广告！")
+o.title = translate("iKoolProxy滤广告")
+o.description = translate("iKoolProxy是基于KoolProxyR重新整理的能识别adblock规则的免费开源软件,追求体验更快、更清洁的网络，屏蔽烦人的广告！")
 
 o:section(SimpleSection).template = "koolproxy/koolproxy_status"
 
@@ -100,7 +100,7 @@ e:value(3, translate("过滤全端口"))
 e.default = 1
 
 e = t:option(ListValue, "time_update", translate("定时更新"))
-e.description = translate("定时更新规则。请把时间修改掉，默认时间使用人数多会更新失败")
+e.description = translate("定时更新规则")
 e.rmempty = false
 for t = 0,23 do
 	e:value(t,translate("每天"..t.."点"))
