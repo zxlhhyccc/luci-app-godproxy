@@ -5,7 +5,7 @@ iKoolProxy是[Beginner-Go](https://github.com/Beginner-Go) 大神基于koolproxy
 
 2、感谢koolproxy官方组、shaoxia、Ameykyl、immortalwrt组、Beginner-Go等的无私奉献！
 
-3、规则来源于 [KoolProxy](https://github.com/godros/koolproxy) 。在此特别鸣谢 [houzi-](https://github.com/houzi-) 。
+3、规则来源于 [KoolProxy](https://github.com/iwrt/koolproxy) 。在此特别鸣谢 [houzi-](https://github.com/houzi-) 。
 
 ## 本来是完全没有必要再造一个的，因为浪费时间。但各位大神都好久没有更新了，有些规则更新需要翻墙，有些名字是KP，有些是KPR，KPR Plus，KPR Plus+。既然在koolproxy上整理而来就暂且叫iKoolProxy。望理解！
 
@@ -58,7 +58,7 @@ CONFIG_PACKAGE_ca-bundle=y
 
 CONFIG_PACKAGE_ca-certificates=y
 
-CONFIG_PACKAGE_libustream-openssl=y
+CONFIG_PACKAGE_libustream-openssl=n  
 
 CONFIG_PACKAGE_lua-openssl=y
 
@@ -68,7 +68,7 @@ CONFIG_PACKAGE_lua-openssl=y
 此文件为 UCI 配置文件, 配置方式可参考 Wiki -> Use-UCI-system 和 OpenWrt Wiki
 
 ## 6、编译
-git clone https://github.com/godros/luci-app-ikoolproxy.git package/luci-app-ikoolproxy
+git clone https://github.com/iwrt/luci-app-ikoolproxy.git package/luci-app-ikoolproxy
 
 make && sudo make install
 
